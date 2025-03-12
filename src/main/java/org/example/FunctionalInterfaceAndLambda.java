@@ -24,7 +24,7 @@ public class FunctionalInterfaceAndLambda {
 
         // Creating an ArrayList with elements
         // {1, 2, 3, 4}
-        ArrayList<Integer> arrL = new ArrayList<Integer>();
+        List<Integer> arrL = new ArrayList<Integer>();
         arrL.add(1);
         arrL.add(2);
         arrL.add(3);
