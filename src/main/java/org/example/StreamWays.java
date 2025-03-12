@@ -34,16 +34,16 @@ public class StreamWays {
             Stream<String> filteredStream=streamFromStaticMethods.filter((String name)->name.length()<=3);
 
             List<String> filteredNameList=filteredStream.collect(Collectors.toList());
-           // filteredNameList.forEach(System.out::println);
+           filteredNameList.forEach(System.out::println);
 
 
             System.out.println ("4. From Stream Builder");
             //4. From Stream Builder
-            Stream.Builder<Integer> streamBuilder=Stream.builder();
-            streamBuilder.add(5000).add(6000).add(7000);
-            Stream<Integer> streamFromStreamBuilder = streamBuilder.build();
-
-            streamFromStreamBuilder.forEach(System.out::println);
+            Stream.Builder<String> streamBuilder=Stream.builder();
+            streamBuilder.add("Hello").add("How Are").add("YOu!");
+            Stream<String> streamFromStreamBuilder = streamBuilder.build();
+            Stream<String> lowerCaseStream = streamFromStreamBuilder.map((String name)->name.toLowerCase());
+            lowerCaseStream.forEach(System.out::println);
 
             System.out.println ("5. From Stream Iterate");
 
