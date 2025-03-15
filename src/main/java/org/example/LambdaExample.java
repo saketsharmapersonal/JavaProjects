@@ -11,7 +11,7 @@ interface ZeroParameter {
 interface Functional {
     int operation(int a, int b);
 }
-public class FunctionalInterfaceAndLambda {
+public class LambdaExample {
     public static void main(String[] args)
     {
         // Lambda expression with zero parameters

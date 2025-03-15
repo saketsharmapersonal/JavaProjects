@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamWays {
+public class StreamExample {
         public static void main(String[] args) {
 
             //Streams
