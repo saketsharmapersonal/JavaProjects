@@ -1,23 +1,21 @@
-package org.example.locking;
-import java.util.concurrent.Semaphore;
+package org.example.java.locking;
 import java.util.concurrent.locks.ReadWriteLock;
 
-public class SharedResourceSemaphoreLock {
+public class SharedResourceReadWriteLock {
     boolean isAvailable=false;
-    Semaphore lock = new Semaphore(2);
-    public void producer(){
+
+    public void producer(ReadWriteLock lock){
 
         try {
-            lock.acquire();
-            System.out.println("Semaphore Lock Acquired by : " + Thread.currentThread().getName());
-            isAvailable=true;
-            Thread.sleep(4000);
+            lock.readLock().lock();
+            System.out.println("Read Lock Acquired by : " + Thread.currentThread().getName());
+            Thread.sleep(8000);
         }catch (Exception e){
             System.out.println("Exception"+e);
         }
         finally {
-            lock.release();
-            System.out.println("Semaphore Lock Released by: "+ Thread.currentThread().getName());
+            lock.readLock().unlock();
+            System.out.println("Read Lock Released by: "+ Thread.currentThread().getName());
 
         }
     }

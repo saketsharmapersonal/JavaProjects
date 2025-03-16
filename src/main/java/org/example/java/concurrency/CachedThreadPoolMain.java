@@ -1,4 +1,4 @@
-package org.example.concurrency;
+package org.example.java.concurrency;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;

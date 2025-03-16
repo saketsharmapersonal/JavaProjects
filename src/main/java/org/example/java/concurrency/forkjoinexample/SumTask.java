@@ -1,4 +1,4 @@
-package org.example.concurrency.forkjoinexample;
+package org.example.java.concurrency.forkjoinexample;
 
 import java.util.concurrent.RecursiveTask;
 

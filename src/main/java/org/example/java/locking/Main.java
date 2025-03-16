@@ -1,9 +1,5 @@
-package org.example.locking;
+package org.example.java.locking;
 
-
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Main {
 

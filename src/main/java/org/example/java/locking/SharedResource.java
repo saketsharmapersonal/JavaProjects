@@ -1,4 +1,4 @@
-package org.example.locking;
+package org.example.java.locking;
 
 
 public class SharedResource {

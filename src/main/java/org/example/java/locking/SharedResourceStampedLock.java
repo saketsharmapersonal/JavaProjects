@@ -1,5 +1,4 @@
-package org.example.locking;
-import java.util.concurrent.locks.ReadWriteLock;
+package org.example.java.locking;
 import java.util.concurrent.locks.StampedLock;
 
 public class SharedResourceStampedLock {
