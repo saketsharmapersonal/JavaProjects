@@ -1,4 +1,4 @@
-package org.example.lld.decoratorDesign.piizzaType;
+package org.example.lld.decoratorDesign.pizzaType;
 
 public abstract class BasePizza {
     public abstract int cost();
